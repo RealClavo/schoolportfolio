@@ -71,8 +71,7 @@
           <li><span>LinkedIn</span><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin.com/in/…</a></li>
         </ul>
         <p class="small-text">
-          You can also reach me using the contact form. In a real deployment, this form would send
-          your message directly to my email.
+          You can also reach me using the contact form.
         </p>
       </div>
 
@@ -99,13 +98,33 @@
 
           <button type="submit" class="btn btn-primary btn-block">Send message</button>
           <p id="formSuccess" class="form-success" aria-live="polite" hidden>
-            Thank you! This message has been handled in the demo. In a real website, it would be sent to my email.
+            Thank you! Your email has been send!
           </p>
         </form>
       </div>
     </div>
   </section>
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+emailjs.init("-CM9wbSWO7Tse4jLy"); // replace with your user ID
+
+const form = document.getElementById('contactForm');
+const successMsg = document.getElementById('formSuccess');
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    emailjs.sendForm('service_drbruih', 'template_x6w7znk', this)
+        .then(() => {
+            successMsg.hidden = false;  // show success
+            form.reset();               // reset form
+        }, (err) => {
+            alert("Oops! Something went wrong: " + JSON.stringify(err));
+        });
+});
+</script>
 
 <footer class="site-footer">
   <div class="container footer-container">
@@ -125,22 +144,3 @@
 </body>
 </html>
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-emailjs.init("-CM9wbSWO7Tse4jLy");
-
-const form = document.getElementById('contactForm');
-const successMsg = document.getElementById('formSuccess');
-
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-
-    emailjs.sendForm('service_drbruih', 'template_x6w7znk', this)
-        .then(() => {
-            successMsg.hidden = false;
-            form.reset();
-        }, (err) => {
-            alert("Oops! Something went wrong: " + JSON.stringify(err));
-        });
-});
-</script>
