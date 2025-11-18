@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects – Rens v/d Rijt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects by Rens v/d Rijt, future software developer.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">R</div>
+      <div class="logo-text">
+        <span class="logo-title">Rens v/d Rijt</span>
+        <span class="logo-subtitle">Future Software Developer</span>
+      </div>
+    </a>
+
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-icon">🌙</span>
+    </button>
+
+    <button class="language-btn" onclick="switchLanguageProjects()">
+      <span class="theme-toggle-icon"><img id="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1920px-Flag_of_the_Netherlands.svg.png" width="40" height="auto" alt="Flag" style="cursor: pointer;"></span>
+    </button>
+
+    <button class="nav-toggle" aria-label="Open navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link nav-link-active" aria-current="page">Projects</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Projects</h1>
+      <p>
+        A selection of school and personal projects that show how I think, learn and write code.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <h2>Highlighted work</h2>
+        <p>
+          Replace these placeholders with your own real projects, GitHub links and live demos.
+        </p>
+      </header>
+
+      <div class="grid-3 project-grid">
+        <article class="card project-card">
+          <p class="project-type">School project</p>
+          <h3>Responsive Portfolio</h3>
+          <p>
+            A mobile-first portfolio website focused on clean layout, accessibility and a professional
+            presentation for internship companies.
+          </p>
+          <ul class="project-tech">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link">Live demo (placeholder)</a>
+            <a href="#" class="project-link">View code on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <p class="project-type">Personal project</p>
+          <h3>Simple To-Do App</h3>
+          <p>
+            A JavaScript to-do list that lets users add, complete and remove tasks, built to practice
+            DOM manipulation and basic state management.
+          </p>
+          <ul class="project-tech">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link">Live demo (placeholder)</a>
+            <a href="#" class="project-link">View code on GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <p class="project-type">Experiment</p>
+          <h3>CSS Layout Playground</h3>
+          <p>
+            A page where I explored Flexbox and Grid layouts to understand how to build modern,
+            responsive page sections and components.
+          </p>
+          <ul class="project-tech">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link">Live demo (placeholder)</a>
+            <a href="#" class="project-link">View code on GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container">
+      <header class="section-header">
+        <h2>How I approach projects</h2>
+        <p>
+          I try to keep a clear, repeatable way of working when I start something new.
+        </p>
+      </header>
+      <ol class="list-steps">
+        <li>
+          <h3>Understand the goal</h3>
+          <p>Clarify what we’re trying to build and who it’s for.</p>
+        </li>
+        <li>
+          <h3>Plan the structure</h3>
+          <p>Sketch the layout, components and states before coding.</p>
+        </li>
+        <li>
+          <h3>Build in iterations</h3>
+          <p>Start with basic features and refine them step by step.</p>
+        </li>
+        <li>
+          <h3>Test on devices</h3>
+          <p>Check mobile, tablet and desktop views and fix issues.</p>
+        </li>
+        <li>
+          <h3>Reflect and improve</h3>
+          <p>Review what went well and what to improve next time.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-main">
+      <p class="footer-name">© <span id="year"></span> Rens v/d Rijt</p>
+      <p class="footer-text">Built with HTML, CSS and JavaScript – mobile-first and responsive.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="mailto:rens@example.com">rijtrens1@gmail.com</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

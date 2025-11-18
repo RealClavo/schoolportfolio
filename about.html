@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About – Rens v/d Rijt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn more about Rens v/d Rijt as a person and future software developer.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">R</div>
+      <div class="logo-text">
+        <span class="logo-title">Rens v/d Rijt</span>
+        <span class="logo-subtitle">Future Software Developer</span>
+      </div>
+    </a>
+
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-icon">🌙</span>
+    </button>
+
+    <button class="language-btn" onclick="switchLanguageAbout()">
+      <span class="theme-toggle-icon"><img id="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1920px-Flag_of_the_Netherlands.svg.png" width="40" height="auto" alt="Flag" style="cursor: pointer;"></span>
+    </button>
+
+    <button class="nav-toggle" aria-label="Open navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link nav-link-active" aria-current="page">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>About me</h1>
+      <p>
+        A short introduction to who I am, how I work, and what I’m looking for in an internship.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div class="card card-photo">
+        <div class="photo-placeholder" aria-label="Photo of Rens">
+          <span>Photo<br>Rens</span>
+        </div>
+        <p class="photo-caption">
+          I enjoy combining logic and creativity in code and design.
+        </p>
+      </div>
+      <div class="about-body">
+        <h2>Hello, I’m Rens</h2>
+        <p>
+          I am a student and future software developer with a strong interest in web development.
+          I enjoy taking ideas and turning them into something people can actually see and use in the browser.
+        </p>
+        <p>
+          What motivates me is learning how software is built in the real world: how teams collaborate,
+          how code is reviewed, and how small details in design and usability can make a huge difference
+          for users.
+        </p>
+        <h3>How I like to work</h3>
+        <ul class="list-check">
+          <li>I start simple and improve my work step by step.</li>
+          <li>I ask questions when needed instead of guessing.</li>
+          <li>I keep my code readable and structured.</li>
+          <li>I enjoy working in a team and sharing ideas.</li>
+        </ul>
+        <h3>What I value</h3>
+        <ul class="list-inline">
+          <li>Clarity</li>
+          <li>Respect</li>
+          <li>Reliability</li>
+          <li>Curiosity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container">
+      <header class="section-header">
+        <h2>Timeline</h2>
+        <p>A quick overview of how I got into software development and where I want to go.</p>
+      </header>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-year">2023 – now</div>
+          <div class="timeline-content">
+            <h3>Software development studies</h3>
+            <p>
+              Building a strong foundation in programming, web technologies, and working in small projects
+              with classmates.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-year">Before 2023</div>
+          <div class="timeline-content">
+            <h3>First steps in tech</h3>
+            <p>
+              Exploring technology, websites and small coding challenges in my free time, and discovering
+              that I enjoy solving problems with code.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-year">Future</div>
+          <div class="timeline-content">
+            <h3>Intern and junior developer</h3>
+            <p>
+              Growing from a trainee into a confident developer in a team that helps me learn and where
+              I can contribute real value.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-main">
+      <p class="footer-name">© <span id="year"></span> Rens v/d Rijt</p>
+      <p class="footer-text">Built with HTML, CSS and JavaScript – mobile-first and responsive.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="mailto:rens@example.com">rijtrens1@gmail.com</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

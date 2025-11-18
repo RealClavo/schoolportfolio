@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills – Rens v/d Rijt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Skills of Rens v/d Rijt as a future software developer.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">R</div>
+      <div class="logo-text">
+        <span class="logo-title">Rens v/d Rijt</span>
+        <span class="logo-subtitle">Future Software Developer</span>
+      </div>
+    </a>
+
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-icon">🌙</span>
+    </button>
+
+    <button class="language-btn" onclick="switchLanguageSkills()">
+      <span class="theme-toggle-icon"><img id="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1920px-Flag_of_the_Netherlands.svg.png" width="40" height="auto" alt="Flag" style="cursor: pointer;"></span>
+    </button>
+
+    <button class="nav-toggle" aria-label="Open navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link nav-link-active" aria-current="page">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Skills</h1>
+      <p>
+        A clear overview of my current technical skills, soft skills, and what I’m actively learning.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <header class="section-header section-header-tight">
+          <h2>Technical skills</h2>
+          <p>
+            Focused on front-end foundations and writing clean, maintainable code.
+          </p>
+        </header>
+        <div class="skills-list">
+          <div class="skill">
+            <div class="skill-label">
+              <span>HTML5</span>
+              <span class="skill-level">Good basics</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-label">
+              <span>CSS3 (Flexbox & Grid)</span>
+              <span class="skill-level">Growing</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-label">
+              <span>JavaScript (ES6 basics)</span>
+              <span class="skill-level">Learning</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 55%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-label">
+              <span>Responsive design</span>
+              <span class="skill-level">Growing</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-label">
+              <span>Git & version control</span>
+              <span class="skill-level">Basic usage</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside aria-label="Soft skills and learning focus">
+        <header class="section-header section-header-tight">
+          <h2>Soft skills</h2>
+          <p>Skills that help me work well with others and learn quickly.</p>
+        </header>
+        <ul class="list-pills">
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Problem-solving</li>
+          <li>Curiosity</li>
+          <li>Attention to detail</li>
+          <li>Time management</li>
+        </ul>
+
+        <h3>Currently learning</h3>
+        <ul class="list-check">
+          <li>Writing more structured JavaScript</li>
+          <li>Improving accessibility in my projects</li>
+          <li>Using design tools to translate layouts into code</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-main">
+      <p class="footer-name">© <span id="year"></span> Rens v/d Rijt</p>
+      <p class="footer-text">Built with HTML, CSS and JavaScript – mobile-first and responsive.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="mailto:rens@example.com">rijtrens1@gmail.com</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

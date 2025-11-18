@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rens v/d Rijt – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Rens v/d Rijt, a future software developer.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+<header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">R</div>
+      <div class="logo-text">
+        <span class="logo-title">Rens v/d Rijt</span>
+        <span class="logo-subtitle">Future Software Developer</span>
+      </div>
+    </a>
+
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-icon">🌙</span>
+    </button>
+
+    <button class="language-btn" onclick="switchLanguage()">
+      <span class="theme-toggle-icon"><img id="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1920px-Flag_of_the_Netherlands.svg.png" width="40" height="auto" alt="Flag" style="cursor: pointer;"></span>
+    </button>
+
+    <button class="nav-toggle" aria-label="Open navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link nav-link-active" aria-current="page">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-kicker">Open for internships</p>
+        <h1>Hi, I’m <span class="hero-highlight">Rens v/d Rijt</span>.</h1>
+        <p class="hero-subtitle">
+          I’m a student and future software developer who loves building clean, responsive
+          web interfaces and learning how real teams ship software.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">View my projects</a>
+          <a href="contact.html" class="btn btn-ghost">Contact me</a>
+        </div>
+        <dl class="hero-stats">
+          <div class="hero-stat">
+            <dt>Focus</dt>
+            <dd>Front-end foundations</dd>
+          </div>
+          <div class="hero-stat">
+            <dt>Mindset</dt>
+            <dd>Curious & hands-on</dd>
+          </div>
+          <div class="hero-stat">
+            <dt>Goal</dt>
+            <dd>Grow as an intern developer</dd>
+          </div>
+        </dl>
+      </div>
+
+      <aside class="hero-profile" aria-label="Profile summary card">
+        <div class="profile-card">
+          <div class="profile-avatar">
+            <span>R</span>
+          </div>
+          <div class="profile-info">
+            <h2 class="profile-name">Rens v/d Rijt</h2>
+            <p class="profile-role">Junior Web Developer</p>
+          </div>
+          <p class="profile-bio">
+            I enjoy turning ideas into working, accessible websites with a focus on structure, usability
+            and clean code.
+          </p>
+          <ul class="profile-tags">
+            <li>HTML & CSS</li>
+            <li>JavaScript basics</li>
+            <li>Mobile-first</li>
+          </ul>
+          <div class="profile-footer">
+            <span class="profile-status-dot"></span>
+            <span class="profile-status-text">Actively looking for an internship</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container">
+      <header class="section-header">
+        <h2>Why work with me?</h2>
+        <p>
+          I bring a strong learning attitude, respect for best practices, and a calm, structured way of working.
+        </p>
+      </header>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Solid foundations</h3>
+          <p>
+            I focus on getting the basics right first: semantic HTML, modern CSS (Flexbox & Grid),
+            and clear, readable JavaScript.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Professional attitude</h3>
+          <p>
+            I take feedback seriously, communicate clearly, and enjoy working in a team where we help each other grow.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Growth mindset</h3>
+          <p>
+            I’m motivated by learning new technologies, improving my work step by step, and understanding how
+            real-world projects are built.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <header class="section-header section-header-tight">
+          <h2>Technical snapshot</h2>
+          <p>A quick overview of where I am now as a developer.</p>
+        </header>
+        <ul class="list-pills">
+          <li>Responsive layouts</li>
+          <li>Clean, semantic markup</li>
+          <li>Basic JavaScript interactions</li>
+          <li>Version control with Git</li>
+          <li>Working with design handoffs</li>
+        </ul>
+      </div>
+      <div class="card card-accent">
+        <h3>Looking for an internship where I can…</h3>
+        <ul class="list-check">
+          <li>Work with experienced developers</li>
+          <li>Contribute to real features and tasks</li>
+          <li>Learn good habits like code reviews and documentation</li>
+          <li>Practice building accessible, responsive interfaces</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary btn-block">Invite me for a conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-emphasis">
+    <div class="container">
+      <div class="cta">
+        <div class="cta-text">
+          <h2>Ready to meet a motivated intern?</h2>
+          <p>
+            I’d love to hear more about your company, team, and projects,
+            and see how I can contribute while I’m learning.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-light">Get in touch</a>
+          <a href="projects.html" class="btn btn-outline">See my projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-main">
+      <p class="footer-name">© <span id="year"></span> Rens v/d Rijt</p>
+      <p class="footer-text">Built with HTML, CSS and JavaScript – mobile-first and responsive.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="mailto:rens@example.com">rijtrens1@gmail.com</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
